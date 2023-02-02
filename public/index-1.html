@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fb5de9f43c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/output.css">
+    <title>Document</title>
+</head>
+
+<body class="h-screen w-full flex justify-center font-POP font-bold">
+    <section class="w-[350px] my-[15px] bg-[#242530] text-white rounded-2xl">
+        <div class="resultas w-full h-[30%] p-6 border-b-[1px] borrder-[#3a3b4c] border-solid">
+            <div class="operation relative w-full h-3/5">
+                <div class="absolute right-0 flex gap-2 text-xl ">
+                    <p class="number1 ">130</p>
+                    <p class="signe">+</p>
+                    <p class="number2">50</p>
+                </div>
+            </div>
+            <div class="result relative w-full h-2/5 text-xl">
+                <p class="absolute right-0" id="result">180</p>
+            </div>
+        </div>
+        <div class="button w-full h-[70%] p-5 flex flex-col justify-between relative overflow-hidden">
+            <div class="btns">
+                <button class="btn claire text-[gold] bg-[#3c3d4f]">c</button>
+                <button class="btn delete text-[gold] bg-[#3c3d4f]"><i
+                        class="fa-sharp fa-solid fa-delete-left"></i></button>
+                <button class="btn historique">H</button>
+                <button class="btn aff opr" data-btn="/"><i class="fa-solid fa-divide"></i></box-icon></button>
+            </div>
+            <div class="btns">
+                <button class="btn aff num" data-num="7">7</button>
+                <button class="btn aff num" data-num="8">8</button>
+                <button class="btn aff num" data-num="9">9</button>
+                <button class="btn aff opr" data-btn="*">*</box-icon></button>
+            </div>
+            <div class="btns">
+                <button class="btn aff num" data-num="4">4</button>
+                <button class="btn aff num" data-num="5">5</button>
+                <button class="btn aff num" data-num="6">6</button>
+                <button class="btn aff opr" data-btn="-"><i class="fa-solid fa-minus"></i></box-icon></button>
+
+            </div>
+            <div class="btns">
+                <button class="btn aff num" data-num="1">1</button>
+                <button class="btn aff num" data-num="2">2</button>
+                <button class="btn aff num" data-num="3">3</button>
+                <button class="btn aff opr" data-btn="+"><i class="fa-regular fa-plus"></i></box-icon></button>
+            </div>
+            <div class="btns">
+                <button class="btn parenth bg-[#3c3d4f]"></button>
+                <button class="btn aff num" data-num="0">0</button>
+                <button class="btn aff num" data-num=".">.</box-icon></button>
+                <button class="btn eql bg-[gold]"><i class="fa-solid fa-equals"></i></box-icon></button>
+            </div>
+            <div
+                class="history absolute w-[200px] h-[100%] bottom-0 bg-[#3c3d4f] text-white overflow-y-scroll right-[380px] transition-all  duration-700 ease-in ">
+                <div class="inside absolute bottom-0 py-2 px-3">
+                    <div class="allhisory">
+                    </div>
+                    <button class="btnh text-base cursor-pointer font-normal">EFFACER L'HISTORIQUE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/javascript/script.js"></script>
+</body>
+
+</html>

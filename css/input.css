@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    .btns {
+      @apply flex justify-between
+    }
+    .btn{
+        @apply text-[25px] bg-[#2e2f3e] h-[67px] w-[67px] p-3 rounded-[50%]
+    }
+    .opr{
+        @apply text-[gold] bg-[#3c3d4f]
+    }
+  }
